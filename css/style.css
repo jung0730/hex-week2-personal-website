@@ -57,10 +57,11 @@ h1 {
 	font-size: 80px;
 	line-height: 106px;
 	font-weight: 900;
+	color: white;
 }
 
 h2 {
-	font-size: 64p;
+	font-size: 64px;
 	line-height: 84px;
 	font-weight: 500;
 }
@@ -69,12 +70,13 @@ h3 {
 	font-size: 24px;
 }
 
-header h3 {
+.info h3 {
 	line-height: 36px;
 	font-weight: 700;
+	color: white;
 }
 
-.about h3 {
+.about h3:not(:last-child) {
 	line-height: 42px;
 	font-weight: 700;
 }
@@ -99,10 +101,53 @@ p {
 	line-height: 30px;
 }
 
-.works p {
+.works p, .info p {
 	line-height: 42px;
 }
 
 img {
-	display: block
+	vertical-align: bottom;
+}
+
+.info {
+	background: url("/images/banner.png") no-repeat center center;
+	padding-top: 308px;
+	padding-bottom: 308px;
+}
+
+.info-container {
+	width: 304px;
+	margin: 0 auto;
+}
+
+.info p {
+	text-align: left;
+	color: white;
+}
+
+.info h1 {
+	margin-bottom: 32px;
+}
+
+.info h3 {
+	margin-bottom: 40px;
+}
+
+.info a:not(:last-child) {
+	margin-right:16px;
+}
+
+.about {
+	width: 412px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about h2 {
+	padding-top: 56px;
+	padding-bottom: 40px;
+}
+
+.about img {
+	margin-bottom: 20px;
 }
