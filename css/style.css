@@ -29,8 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-style: italic;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -57,7 +57,6 @@ h1 {
 	font-size: 80px;
 	line-height: 106px;
 	font-weight: 900;
-	color: white;
 }
 
 h2 {
@@ -70,41 +69,6 @@ h3 {
 	font-size: 24px;
 }
 
-.info h3 {
-	line-height: 36px;
-	font-weight: 700;
-	color: white;
-}
-
-.about h3:not(:last-of-type) {
-	line-height: 42px;
-	font-weight: 700;
-}
-
-.brand h3 {
-	line-height: 42px;
-	font-weight: 500;
-}
-
-ul li {
-	font-size: 24px;
-	line-height: 42px;
-	font-weight: 700;
-}
-
-p {
-	font-size: 20px;
-	font-weight: 500;
-}
-
-.brand p {
-	line-height: 30px;
-}
-
-.works p, .info p {
-	line-height: 42px;
-}
-
 img {
 	vertical-align: bottom;
 }
@@ -113,16 +77,18 @@ img {
 	background: url("/images/banner.png") no-repeat center center;
 	padding-top: 308px;
 	padding-bottom: 308px;
+	color: white;
 }
 
 .info-container {
-	width: 304px;
+	width: 314px;
 	margin: 0 auto;
 }
 
 .info p {
+	font-size: 24px;
 	text-align: left;
-	color: white;
+	line-height: 42px;
 }
 
 .info h1 {
@@ -130,28 +96,31 @@ img {
 }
 
 .info h3 {
+	line-height: 36px;
+	font-weight: 700;
 	margin-bottom: 40px;
 }
 
 .info a:not(:last-child) {
-	margin-right:16px;
+	margin-right: 16px;
 }
 
 .about {
-	width: 412px;
+	width: 436px;
 	margin: 0 auto;
 	text-align: center;
-	margin-bottom: 56px;
+	padding-top: 56px;
+	padding-bottom: 56px;
 }
 
 .about h2 {
-	padding-top: 56px;
 	padding-bottom: 40px;
 }
 
 .about img {
 	margin-bottom: 20px;
 }
+
 .about h3:first-of-type {
 	margin-bottom: 4px;
 }
@@ -159,7 +128,6 @@ img {
 .about h3:nth-of-type(2) {
 	margin-bottom: 8px;
 }
-
 
 .about h3:last-of-type {
 	line-height: 36px;
@@ -186,14 +154,38 @@ img {
 	margin-right: 16px;
 }
 
+.about li {
+	font-size: 24px;
+	line-height: 42px;
+	font-weight: 700;
+}
+
+.about h3:not(:last-of-type) {
+	line-height: 42px;
+	font-weight: 700;
+}
+
+.brand h3 {
+	line-height: 42px;
+	font-weight: 500;
+}
+
+.brand p {
+	margin-bottom: 68px;
+	line-height: 30px;
+	font-style: normal;
+	font-size: 20px;
+}
+
 .brand {
 	background-color: black;
 	color: white;
 	text-align: center;
+	padding-top: 56px;
+	padding-bottom: 160px;
 }
 
 .brand h2 {
-	padding-top: 56px;
 	margin-bottom: 12px;
 }
 
@@ -201,11 +193,7 @@ img {
 	margin-bottom: 32px;
 }
 
-.brand p {
-	margin-bottom: 68px;
-}
-
-.brand img {
+.brand img:first-of-type {
 	margin-bottom: 40px;
 }
 
@@ -215,12 +203,26 @@ img {
 
 .works {
 	text-align: center;
-	margin-bottom: 144px;
+	padding-top: 56px;
+	padding-bottom: 144px;
 }
 
 .works h2 {
-	padding-top: 56px;
 	margin-bottom: 16px;
+}
+
+.works > p {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	padding-bottom: 56px;
+}
+
+.work-list p {
+	font-size: 20px;
+	line-height: 42px;
+	font-weight: 500;
 }
 
 .work-list {
@@ -230,6 +232,7 @@ img {
 
 .work-list img {
 	margin-right: 24px;
+	margin-bottom: 16px;
 }
 
 .work-list:not(:last-of-type) {
@@ -246,4 +249,10 @@ img {
 
 .contact h2 {
 	margin-bottom: 16px;
+}
+
+.contact ul {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 500;
 }
