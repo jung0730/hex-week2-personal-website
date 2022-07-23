@@ -76,14 +76,16 @@ img {
 .info {
 	/* 相對路徑(上一層目錄中的img/banner.png) */
 	/* 圖片不建議用padding推出來 */
-	background: url("../images/banner.png") no-repeat center center;
+	background: url("../images/banner.png") no-repeat;
 	color: white;
 	font-style: italic;
 	font-weight: 700;
 	margin-bottom: 56px;
+	height: 100vh;
 }
 
 .info-container {
+	padding-top: 308px;
 	width: 314px;
 	margin: 0 auto;
 }
