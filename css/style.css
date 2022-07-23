@@ -71,13 +71,16 @@ img {
 	vertical-align: bottom;
 }
 
+/* 區塊與區塊的間距用 margin 推擠，padding 較常用於產生區塊內部空間 */
+
 .info {
-	background: url("/images/banner.png") no-repeat center center;
-	padding-top: 298px;
-	padding-bottom: 308px;
+	/* 相對路徑(上一層目錄中的img/banner.png) */
+	/* 圖片不建議用padding推出來 */
+	background: url("../images/banner.png") no-repeat center center;
 	color: white;
 	font-style: italic;
 	font-weight: 700;
+	margin-bottom: 56px;
 }
 
 .info-container {
@@ -85,7 +88,7 @@ img {
 	margin: 0 auto;
 }
 
-.info p {
+.info span {
 	font-size: 24px;
 	text-align: left;
 	line-height: 42px;
@@ -99,8 +102,12 @@ img {
 	line-height: 36px;
 	margin-bottom: 40px;
 }
+/* li本身是block element */
+.info li {
+	display: inline-block;
+}
 
-.info a:not(:last-child) {
+.info li:not(:last-child) {
 	margin-right: 16px;
 }
 
@@ -108,8 +115,7 @@ img {
 	width: 436px;
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 56px;
-	padding-bottom: 56px;
+	margin-bottom: 56px;
 	font-style: italic;
 	font-weight: 700;
 }
@@ -147,6 +153,7 @@ img {
 	margin-bottom: 28px;
 }
 
+/* psuedo element 為inline element */
 .about ul li::before {
 	content: '';
 	width: 22px;
@@ -172,10 +179,11 @@ img {
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding-top: 56px;
-	padding-bottom: 160px;
+	margin-bottom: 160px;
 	font-style: italic;
 	font-weight: 500;
+	padding-top: 56px;
+	padding-bottom: 160px;
 }
 
 .brand h2 {
@@ -187,20 +195,24 @@ img {
 	margin-bottom: 32px;
 }
 
-.brand img:first-of-type {
-	display: block;
-	margin: 0 auto;
+.brand ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.brand li:first-of-type {
+	flex-basis: 100%;
 	margin-bottom: 40px;
 }
 
-.brand img:nth-of-type(2) {
+.brand li:nth-of-type(2) {
 	margin-right: 24px;
 }
 
 .works {
 	text-align: center;
-	padding-top: 56px;
-	padding-bottom: 144px;
+	margin-bottom: 56px;
 	font-weight: 500;
 }
 
